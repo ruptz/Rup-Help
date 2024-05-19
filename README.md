@@ -31,7 +31,7 @@ You can adjust the behavior of the resource by modifying the Lua script (`client
 
 ## Images
 
-![img1](https://media.discordapp.net/attachments/1043860724419670026/1241702077458026536/image.png?ex=664b28ac&is=6649d72c&hm=3f509b8bffdf193630ce66d4a5405ca57e2cb1d41e58ac50605f6d8a287d12c1&=&format=webp&quality=lossless)
+![img1](https://media.discordapp.net/attachments/1043860724419670026/1241702132122390579/image.png?ex=664b28ba&is=6649d73a&hm=d895d28f848321f1ca518960246b0e1a8d58fd25a87aea9f47f661ce396d56e5&=&format=webp&quality=lossless&width=810&height=455)
 ![img2](https://media.discordapp.net/attachments/1043860724419670026/1241702077458026536/image.png?ex=664b28ac&is=6649d72c&hm=3f509b8bffdf193630ce66d4a5405ca57e2cb1d41e58ac50605f6d8a287d12c1&=&format=webp&quality=lossless)
 
 ## License
