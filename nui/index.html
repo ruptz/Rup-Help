@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body style="display: none;">
+    <div class="help-menu">
+        <div class="help-header">
+            <div class="help-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <h1>Help Menu</h1>
+        </div>
+        <div class="help-content">
+            <ul>
+                <li><i class="fas fa-cogs"></i> Use <b style="color: lightcoral;">/togglehelp</b> to enable/disable help notifications.</li>
+                <li><i class="fas fa-briefcase"></i> Use <b style="color: lightcoral;">/job</b> to check your current job status.</li>
+                <li><i class="fas fa-taxi"></i> Use <b style="color: lightcoral;">/911</b> to call the police.</li>
+                <li><i class="fas fa-tools"></i> Use <b style="color: lightcoral;">/bill</b> to bill a player.</li>
+                <li><i class="fas fa-money-bill-wave"></i> Need to deposit money? <b style="color: green;">$</b> on map to go to a bank!</li>
+            </ul>
+        </div>
+        <div class="help-footer">
+            <button class="close-btn" onclick="closeHelp()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function closeHelp() {
+            fetch('https://rup-help/closeHelp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8'
+                }
+            }).then(() => {
+                document.body.style.display = 'none';
+            });
+        }
+
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'openHelp') {
+                document.body.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>

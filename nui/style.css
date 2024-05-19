@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-menu {
+    background-color: #282c34;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 500px;
+    width: 80%;
+    animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+}
+
+.help-header {
+    display: flex;
+    align-items: center;
+}
+
+.help-logo {
+    margin-right: 20px;
+}
+
+.help-logo img {
+    max-width: 100px;
+    border-radius: 1vh;
+}
+
+.help-header h1 {
+    margin: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #f44336;
+    padding-bottom: 10px;
+}
+
+.help-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.help-content ul li {
+    margin: 15px 0;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 30px;
+}
+
+.help-content ul li:before {
+    content: '\f111'; /* FontAwesome bullet icon */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f44336;
+}
+
+.close-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
