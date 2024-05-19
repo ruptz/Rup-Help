@@ -36,4 +36,4 @@ You can adjust the behavior of the resource by modifying the Lua script (`client
 
 ## License
 
-This resource is provided under the [MIT License](LICENSE).
+This resource is licensed under the [MIT License](LICENSE).
