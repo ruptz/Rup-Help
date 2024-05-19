@@ -10,4 +10,6 @@ Config.Messages = {
     "We are hiring at LS mechanic shop!"
 }
 
+Config.NotiActive = true -- If you want the help notifications to be on by default.
+
 Config.WaitNoti = 1 -- Notification interval in minutes

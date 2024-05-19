@@ -1,4 +1,4 @@
-local alertsActive = true
+local alertsActive = Config.NotiActive
 
 function ChatNotification(icon, title, subtitle, message)
     SetNotificationTextEntry("STRING")
