@@ -6,6 +6,9 @@ The rup-help resource is designed for FiveM, a modification framework for Grand 
 
 This resource allows players to access a help menu in-game, providing information about various commands and features. It includes chat notifications, a toggle for help notifications, and an automatic help notification system.
 
+## Support
+https://discord.gg/nHu2pZjUGG
+
 ## Usage
 
 To use this resource:
